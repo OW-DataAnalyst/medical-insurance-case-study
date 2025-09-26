@@ -2,9 +2,9 @@
 Insurance Charges Analysis 
 
 
-🎯 Problem biznesowy: Ubezpieczyciel chce zoptymalizować pricing, underwriting i programy prewencyjne poprzez zrozumienie, które czynniki (palenie, wiek, BMI, region, liczba dzieci) napędzają koszty medyczne klientów.
+# 🎯 Problem biznesowy: Ubezpieczyciel chce zoptymalizować pricing, underwriting i programy prewencyjne poprzez zrozumienie, które czynniki (palenie, wiek, BMI, region, liczba dzieci) napędzają koszty medyczne klientów.
 
-📊 Dane Tabela: insurance 
+# 📊 Dane Tabela: insurance 
 
 
 Kolumny:
@@ -23,7 +23,7 @@ charges (float)
 
 region (northeast/southeast/northwest/southwest)
 
-✅ Quality checks
+# ✅ Quality checks
 
 Liczba rekordów: 1 338
 
@@ -41,7 +41,7 @@ charges: 1 121.87–63 770.43
 
 Kategoryzacje poprawne: smoker ∈ {yes, no}, sex ∈ {male, female}, region ∈ {northeast, southeast, northwest, southwest}
 
-📈 Wyniki i insighty
+# 📈 Wyniki i insighty
 
 # 01_smoker_baseline.csv
 
