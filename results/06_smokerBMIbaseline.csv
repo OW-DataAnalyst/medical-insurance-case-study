@@ -1,0 +1,5 @@
+bmi_cat,avg_smoker,avg_nonsmoker,diff_charges,ratio_smoker_to_nonsmoker,cnt
+Obese,41355.9,8829.5,32526.4,4.68,719
+Overweight,22379.0,8306.4,14072.7,2.69,377
+Normal,19942.2,7599.6,12342.6,2.62,222
+Underweight,18809.8,5533.0,13276.8,3.40,20
