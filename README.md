@@ -201,7 +201,7 @@ ekstremalni klienci potrzebują limitów i indywidualnych warunków.
 
 premia palacza najniższa przy 4–5 dzieciach, warto uwzględnić liczbę dzieci w taryfie.
 
-💡 Rekomendacje końcowe
+# 💡 Rekomendacje końcowe
 
 Wprowadzić dynamiczne taryfy uwzględniające cross-efekty palenia × BMI × wiek.
 
@@ -213,18 +213,29 @@ Skoncentrować działania na top 20% klientów (51.6% kosztów).
 
 Uwzględnić liczbę dzieci i płeć jako modyfikatory ryzyka.
 
-📂 Wyniki (folder results/)
+# 📂 Wyniki (folder results/)
 
-Plik	Opis
+
 01_smoker_baseline.csv	Baseline palenia (avg_smoker vs avg_nonsmoker)
+
 02_age_bands.csv	Średnie koszty wg pasm wieku
+
 03_bmi_categories.csv	Średnie koszty wg kategorii BMI
+
 04_region_median.csv	Mediana kosztów wg regionu
+
 05_smoker_premium_by_age.csv	Diff & ratio palacz vs niepalący w grupach wiekowych
+
 06_bmi_smoker_interaction.csv	Interakcja BMI × palenie (diff & ratio)
+
 07_sex_age_smoker.csv	Pivot: płeć × wiek × palenie
+
 08_quartiles_profile.csv	Kwartyle kosztów i profil kwartylowy
+
 09_pareto_top20.csv	Pareto top 20% klientów
+
 10_risk_groups_case.csv	Segmenty ryzyka (smoker + BMI + wiek)
+
 11_topN_by_risk_group.csv	Top 3 rekordy w każdym segmencie ryzyka
+
 12_children_effect_controlled.csv	Wpływ liczby dzieci na koszty wg palenia
