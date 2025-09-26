@@ -1,6 +1,8 @@
 # medical-insurance-case-study
-Insurance Charges Analysis — Advanced SQL Case Study
-🎯 Problem biznesowy Ubezpieczyciel chce zoptymalizować pricing, underwriting i programy prewencyjne poprzez zrozumienie, które czynniki (palenie, wiek, BMI, region, liczba dzieci) napędzają koszty medyczne klientów.
+Insurance Charges Analysis 
+
+
+🎯 Problem biznesowy: Ubezpieczyciel chce zoptymalizować pricing, underwriting i programy prewencyjne poprzez zrozumienie, które czynniki (palenie, wiek, BMI, region, liczba dzieci) napędzają koszty medyczne klientów.
 
 📊 Dane Tabela: insurance Kolumny:
 
