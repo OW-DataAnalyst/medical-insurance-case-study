@@ -4,7 +4,10 @@ Insurance Charges Analysis
 
 🎯 Problem biznesowy: Ubezpieczyciel chce zoptymalizować pricing, underwriting i programy prewencyjne poprzez zrozumienie, które czynniki (palenie, wiek, BMI, region, liczba dzieci) napędzają koszty medyczne klientów.
 
-📊 Dane Tabela: insurance Kolumny:
+📊 Dane Tabela: insurance 
+
+
+Kolumny:
 
 age (int)
 
@@ -39,14 +42,16 @@ charges: 1 121.87–63 770.43
 Kategoryzacje poprawne: smoker ∈ {yes, no}, sex ∈ {male, female}, region ∈ {northeast, southeast, northwest, southwest}
 
 📈 Wyniki i insighty
+
 01_smoker_baseline.csv
+
 Średnie koszty: palacze = 32 050.2, niepalący = 8 434.3
 
 Diff = 23 616.0
 
 Ratio = 3.80×
 
-So what: palacze generują prawie 4× wyższe koszty → konieczność wyższych składek i programów anti-smoking.
+palacze generują prawie 4× wyższe koszty → konieczność wyższych składek i programów anti-smoking.
 
 02_age_bands.csv
 50+ = 17 902.6 (n=385)
@@ -61,7 +66,7 @@ Diff 50+ vs 18–29 = 8 720.1
 
 Ranking: 50+ > 40–49 > 30–39 > 18–29
 
-So what: koszty rosną linearnie z wiekiem – kluczowy driver pricingu.
+koszty rosną linearnie z wiekiem – kluczowy driver pricingu.
 
 03_bmi_categories.csv
 Obese = 15 479.5 (n=719)
@@ -76,7 +81,7 @@ Diff Obese vs Normal = 5 100.0
 
 Ranking: Obese > Overweight > Normal > Underweight
 
-So what: wyższy BMI koreluje z wyższymi kosztami → targetowane programy wellness.
+wyższy BMI koreluje z wyższymi kosztami → targetowane programy wellness.
 
 04_region_median.csv
 northeast = 10 057.7
@@ -89,7 +94,8 @@ southwest = 8 798.6
 
 Diff max–min = 1 259.1
 
-So what: regiony o najwyższej medianie wymagają priorytetowych działań prewencyjnych.
+
+regiony o najwyższej medianie wymagają priorytetowych działań prewencyjnych.
 
 05_smoker_premium_by_age.csv
 18–29: avg_smoker = 27 518.0, avg_nonsmoker = 4 418.6, diff = 23 099.5, ratio = 6.23×
@@ -111,7 +117,8 @@ Normal: diff = 12 342.6, ratio = 2.62×
 
 Underweight: diff = 13 276.8, ratio = 3.40×
 
-So what: najwyższe ryzyko kosztowe w segmencie Obese×smoker – priorytet dla underwriting’u.
+
+najwyższe ryzyko kosztowe w segmencie Obese×smoker – priorytet dla underwriting’u.
 
 07_sex_age_smoker.csv
 18–29:
@@ -126,7 +133,8 @@ female: avg_smoker = 24 735.8 / avg_nonsmoker = 4 911.0 → ratio = 5.04×
 
 50+: male = 3.05×, female = 2.71×
 
-So what: młodzi mężczyźni-palacze generują największą premię kosztową – personalizacja ofert wg płci i wieku.
+
+młodzi mężczyźni-palacze generują największą premię kosztową – personalizacja ofert wg płci i wieku.
 
 08_quartiles_profile.csv
 Q1: avg_age=23.8; avg_bmi=29.9; smoker_share=0.0%; avg_charges=2 853.1 (n=335)
@@ -144,7 +152,8 @@ Top 20% (n=267) generuje 51.6% wszystkich kosztów
 
 Profil: avg_age=42.7; avg_bmi=32.2; smoker_share=77.9%
 
-So what: niewielka grupa odpowiada za większość wydatków – indywidualne programy zarządzania ryzykiem.
+
+niewielka grupa odpowiada za większość wydatków – indywidualne programy zarządzania ryzykiem.
 
 10_risk_groups_case.csv
 Top 3 segmenty wg sum_charges:
@@ -164,7 +173,7 @@ Najwyższy pojedynczy koszt: 63 770.43 (yes_Obese_50+, age=54)
 
 Kolejne outliery: 62 592.87 (yes_Obese_40-49), 58 571.07 (yes_Obese_30-39)
 
-So what: ekstremalni klienci potrzebują limitów i indywidualnych warunków.
+ekstremalni klienci potrzebują limitów i indywidualnych warunków.
 
 12_children_effect_controlled.csv
 0 dzieci: diff=23 729.6; ratio=4.12× (n=574)
@@ -179,7 +188,7 @@ So what: ekstremalni klienci potrzebują limitów i indywidualnych warunków.
 
 5 dzieci: diff=10 839.4; ratio=2.32×
 
-So what: premia palacza najniższa przy 4–5 dzieciach, warto uwzględnić liczbę dzieci w taryfie.
+premia palacza najniższa przy 4–5 dzieciach, warto uwzględnić liczbę dzieci w taryfie.
 
 💡 Rekomendacje końcowe
 
